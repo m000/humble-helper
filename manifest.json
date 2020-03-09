@@ -2,7 +2,7 @@
 
   "manifest_version": 2,
   "name": "Humble Helper",
-  "version": "0.0.1",
+  "version": "0.9.0",
   "description": "Helper for humble bundle.",
   "homepage_url": "https://github.com/m000/humble-helper",
 
