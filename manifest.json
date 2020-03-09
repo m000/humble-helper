@@ -21,12 +21,14 @@
     }
   ],
   "page_action": {
+    "default_title": "Humble Helper export",
+    "show_matches": ["*://www.humblebundle.com/*"],
+    "default_popup": "page-action/index.html",
+    "browser_style": true,
     "default_icon": {
       "256": "icons/humble-helper_256.png",
       "48": "icons/humble-helper_48.png"
-    },
-    "default_popup": "page-action/index.html",
-    "default_title": "humble-helper"
+    }
   },
   "applications": {
     "gecko": {

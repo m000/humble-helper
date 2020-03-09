@@ -1,1 +1,2 @@
-document.getElementById('myHeading').style.color = 'red'
+
+document.body.style.border = "10px solid red";

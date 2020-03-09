@@ -11,8 +11,8 @@ function copyToClipboard(game_info) {
   var display_order = [
     "bundle", "display_order", "name", "selected", "steam", "drmfree",
     "genres", "platforms", "developers",
-    "url_youtube", "url_steam", "msrp",
-    "id",
+    "url_youtube", "url_steam", "url_image",
+    "msrp", "id",
   ];
 
   game_info.forEach(function(g, i) {
@@ -72,6 +72,7 @@ const removal_observer = new MutationObserver(function(mutations, observer) {
           "developers": gi.developers.join(", "),
           "url_youtube": (ytl.length > 0) ? "https://youtu.be/" + ytl[0] : "",
           "url_steam": (steamid != "") ? "https://store.steampowered.com/app/" + steamid : "",
+          "url_image": gi.image,
           "steam": gi.delivery_methods.includes("steam"),
           "drmfree": gi.delivery_methods.includes("download"),
           "selected": false,
