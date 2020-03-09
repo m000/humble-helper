@@ -108,26 +108,4 @@ const removal_observer = new MutationObserver(function(mutations, observer) {
 
 removal_observer.observe(document.body, { childList: true });
 
-
-/*
-// This function retrieves data about the bundle from the DOM after page has
-// fully loaded. However not all data are directly accessible through HTML
-// elements. For this, the function is not used.
-function getHumbleMonthlyData() {
-  var choices = document.querySelectorAll(".content-choice");
-  var choices_info = [];
-  choices.forEach(function(v, i) {
-    var info = {
-      "name": v.querySelector(".content-choice-title").innerText,
-      "claimed": v.querySelector(".js-claimed-badge-container").innerText != "",
-      "steam": v.querySelector(".delivery-methods .hb-steam") != null,
-      "drmfree": v.querySelector(".delivery-methods .hb-drmfree") != null,
-      "img": v.querySelector(".choice-image").getAttribute("src")
-    };
-    choices_info.push(info);
-  });
-  return choices_info;
-}
-*/
-
 // vim: tabstop=2 shiftwidth=2 softtabstop=2 expandtab cursorline
