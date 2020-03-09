@@ -1,7 +1,7 @@
 {
 
   "manifest_version": 2,
-  "name": "humble-helper",
+  "name": "Humble Helper",
   "version": "0.0.1",
   "description": "Helper for humble bundle.",
   "homepage_url": "https://github.com/m000/humble-helper",
@@ -21,7 +21,7 @@
     }
   ],
   "page_action": {
-    "default_title": "Humble Helper export",
+    "default_title": "Humble Helper",
     "show_matches": ["*://www.humblebundle.com/*"],
     "default_popup": "page-action/index.html",
     "browser_style": true,
@@ -35,5 +35,5 @@
       "id": "humble-helper@m000.github.io"
     }
   },
-  "permissions": ["clipboardWrite"]
+  "permissions": ["clipboardWrite", "activeTab", "notifications"]
 }
