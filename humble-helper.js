@@ -57,6 +57,10 @@ const removal_observer = new MutationObserver(function(mutations, observer) {
         var ytl = gi.carousel_content["youtube-link"];
         var steamid = gi.tpkds[0]["steam_app_id"];
 
+        // sort stuff
+        gi.genres.sort();
+        gi.platforms.sort();
+
         // assemble exported info dictionary
         var info = {
           "id": g,
